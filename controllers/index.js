@@ -1,3 +1,4 @@
+// set up all controllers
 module.exports = {
     MainController : require('./main'),
     AboutController : require('./about'),

@@ -2,7 +2,7 @@ const express = require('express');
 const {LibraryController} = require('../controllers');
 const router = express.Router();
 
-// Set up routes for library
+// set up library page routes
 router.get('/', LibraryController.getPage);
 router.post('/', LibraryController.postBook);
 router.put('/', LibraryController.putBook);

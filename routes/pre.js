@@ -5,6 +5,7 @@ const authService = require('../services/auth_service');
 const errors = require('../definitions/errors');
 const router = express.Router();
 
+// performs pre actions for all requests
 router.use((req, res, next) => {
     // save request time
     const reqTime = moment().format("YYYY-MM-DD-HH:mm:ss");

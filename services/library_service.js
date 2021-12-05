@@ -20,7 +20,7 @@ const findBook = (name) => {
     }
     return null;
 }
-
+// library (db) service
 module.exports = {
     /* GET all books. */
     getAll: () => {

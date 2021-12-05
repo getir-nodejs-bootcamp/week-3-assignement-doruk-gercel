@@ -1,3 +1,4 @@
+// set up all about page actions
 const AboutController = {
     async getPage(req, res) {
       console.log("hakkimizda")
