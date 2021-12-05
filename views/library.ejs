@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include('./navbar.ejs')%>
+    <div class="main-div">
+      <h1 class="main-title"><%= name %></h1>
+      <% if (books.length) {
+        %><ul>
+          <% books.forEach((book) => {
+            %>
+              <li><%= book.name %></li>
+            <%
+          }) %>
+        </ul><%
+    } %>
+    </div>
+  </body>
+</html>
